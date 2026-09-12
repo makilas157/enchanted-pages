@@ -269,6 +269,59 @@ export const navLinks = [
   { to: "/blogs", label: "Blogs" },
 ] as const;
 
+export type NavDestination = {
+  slug: string;
+  label: string;
+  to: "/services" | "/products" | "/projects" | "/why-us" | "/about" | "/blogs" | "/contact";
+  blurb: string;
+};
+
+export const navDestinations: NavDestination[] = [
+  {
+    slug: "services",
+    label: "Services",
+    to: "/services",
+    blurb:
+      "Web and mobile engineering, product design, cloud and AI — each discipline with its own detailed page.",
+  },
+  {
+    slug: "products",
+    label: "Products",
+    to: "/products",
+    blurb: "The in-house tools we built for our own work, now available to your team.",
+  },
+  {
+    slug: "projects",
+    label: "Projects",
+    to: "/projects",
+    blurb: "Selected work: what we shipped, the constraints we worked inside, and the outcome.",
+  },
+  {
+    slug: "why-us",
+    label: "Why Us",
+    to: "/why-us",
+    blurb: "How we work, what we refuse to compromise on, and why teams stay with us.",
+  },
+  {
+    slug: "about",
+    label: "About",
+    to: "/about",
+    blurb: "The studio, the people and the thinking behind Tevexxo.",
+  },
+  {
+    slug: "blogs",
+    label: "Blogs",
+    to: "/blogs",
+    blurb: "Notes on engineering, design and building products that survive contact with reality.",
+  },
+  {
+    slug: "contact",
+    label: "Contact",
+    to: "/contact",
+    blurb: "Tell us what you're building — we reply within one business day.",
+  },
+];
+
 export const socials = [
   { name: "Instagram", handle: "@tevexxo", href: "https://instagram.com" },
   { name: "WhatsApp", handle: "Chat with us", href: "https://wa.me/10000000000" },
