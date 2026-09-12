@@ -7,6 +7,7 @@ import { CatalogCard } from "@/components/CatalogCard";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading, SectionTag } from "@/components/SectionHeading";
 import { SocialSection } from "@/components/SocialSection";
+import { NavConstellation } from "@/components/NavConstellation";
 import { products, services, stats } from "@/data/site";
 
 export const Route = createFileRoute("/")({
@@ -154,6 +155,8 @@ function Home() {
           </Reveal>
         </div>
       </section>
+
+      <NavConstellation />
 
       <SocialSection />
     </>
