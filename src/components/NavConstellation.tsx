@@ -13,7 +13,7 @@ export function NavConstellation() {
 
   useEffect(() => setMounted(true), []);
 
-  const active = navDestinations.find((d) => d.slug === activeSlug) ?? navDestinations[0];
+  const active = navDestinations.find((d) => d.slug === activeSlug) ?? navDestinations[0]!;
 
   return (
     <section className="section-y border-y border-border/60 bg-surface/40">
